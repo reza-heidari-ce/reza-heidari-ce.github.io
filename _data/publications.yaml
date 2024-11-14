@@ -1,0 +1,12 @@
+papers:
+  - title: " Robust Fusion of Time Series and Image Data for
+ Improved Multimodal Clinical Prediction"
+    authors: "Ali Rasekh, <b>Reza Heidari</b>, Amir Hosein Haji Mohammad Rezaie, Pars Sharifi Sedeh, Zahra Ahmadi, Prasenjit Mitra, and Wolfgang Nejdl"
+    venue: "IEEE Access"
+    paper_pdf: "https://arxiv.org/abs/2405.15442"
+    # code: "https://github.com/UNITES-Lab/flex-moe"
+    year: "2024"
+
+
+
+  

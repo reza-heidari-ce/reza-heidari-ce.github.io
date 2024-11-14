@@ -1,364 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Reza Heidari</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Reza Heidari</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Reza</h1>
-        <p class="section__text__p2">AI Enthusiast and Researcher</p>
-   <!--      <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div> -->
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/rhei'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/reza-heidari-ce'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Research Intern at L3s Research Center<br /> Software Engineering Intern at Divar</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. in Computer Engineering<br />Sharif University of Technology</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-			I am a third-year Computer Engineering Bachelor's student at
-			Sharif University of Technology. 
-			My current research is focused on Multimodal Machine Learning,
-			 2D and 3D Computer Vision, and Deep Learning. I have worked in collaboration
-			 with L3S Research Center, The University of Sydney and The University of Western Australia on different 
-			 research projects revolving around Multimodal Medical Classification and Visual Question Answering.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Research Intern</h2>
-              <h3 align="left"> L3S Research Center, Leibniz University Hannover</h3>
-<p align="left">
-  Research on Multimodal Vision and Language Machine Learning<br/>
-  Robust Multimodal Classification of Medical Data<br/>
-  Transformer-based and Generative models
-</p>   
-<br/>
-<h3 align="left"> L3S Research Center, USYD and UWA</h3>
-<p align="left">
-  Research on Visual Question Answering<br/>
-  GNNs and Vision-Language models
-</p>   
-
+---
+layout: default
+title: Home
+---
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+I am a Computer Engineering B.Sc student at Sharif University of Technology. I have worked on a robust multimodal classification project under Prof. Mitra and Prof. Ahmadi at L3S Research Center. I have also had the privilege of working with Prof. Han and Prof. Mitra on a Medical Visual Question Answering in collaboration with L3S Research Center, The University of Sydney, and The University of Melbourne. Last summer I worked on 3d scene generation from scene graphs under Prof. Tombari and Prof. Navab.
 
   
-		  </div>
+  <p>
+  My current research interests lie in <b>Computer Vision</b>, <b>Multimodal Learning</b> and <b>Machine Learning for Healthcare </b>.
+
+</div>
 
 
-  
-
-
-		  
-          <div class="details-container">
-            <h2 class="experience-sub-title">Teaching Assistant</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <p>Artificial Intelligence</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <p>Linear Algebra</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <p>Probability and Statistics</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <p>Data Structures and Algorithms</p>
-                </div>
-              </article>
-			                <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <p>Advanced Programming</p>
-                </div>
-              </article>
-			                <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <p>Fundamentals of Programming</p>
-                </div>
-              </article>
-            </div>
+<!-- ========== Education ==========-->
+<div class="docs-section" id="education">
+  <h4>Education</h4>
+      
+        <div class="paper">
+          <p class="title"><b>Sharif University of Technology<b style="float:right;">Sep. 2021 - Now</b></b></p>
           
-
+          <p>B.Sc. in Computer Engineering
+          <p></p>
         </div>
+</div> 
+
+
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
+  <sup><b>*</b></sup> indicates equal contribution.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-2024">2024</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <!-- Tab: 2024 -->
+    <div class="tab-pane active" id="papers-2024">
+      {% assign papers2024 = site.data.publications.papers | where: "year", "2024" %}
+      {% for paper in papers2024 %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+          <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+
+
+    <!-- Tab: 2023-Past -->
+    <div class="tab-pane" id="papers-all">
+      {% assign papersall = site.data.publications.papers %}
+      {% for paper in papersall %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+          <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ========== PROJECTS ========== -->
+<div class="docs-section" id="projects">
+  <h4>Projects</h4>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#projects-2024">2024</div></li>
+    <li><div class="button active" data-ref="#projects-2023">2023</div></li>
+    <li><div class="button" data-ref="#projects-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <!-- Tab: 2024 -->
+    <div class="tab-pane active" id="projects-2024">
+      {% assign projects2024 = site.data.projects.projs | where: "year", "2024" %}
+      {% for project in projects2024 %}
+        <div class="project">
+          <img src="{{ project.image }}" alt="{{ project.name }} Image" style="width:100px; height:auto;">
+          <p class="title"><b>{{ project.name }}</b></p>
+          <div class="project-buttons">
+            {% if project.github %}
+              <a class="button" href="{{ project.github }}" target="_blank">GitHub</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane active" id="projects-2023">
+      {% assign projects2023 = site.data.projects.projs | where: "year", "2023" %}
+      {% for project in projects2023 %}
+        <div class="project">
+          <img src="{{ project.image }}" alt="{{ project.name }} Image" style="width:100px; height:auto;">
+          <p class="title"><b>{{ project.name }}</b></p>
+          <div class="project-buttons">
+            {% if project.github %}
+              <a class="button" href="{{ project.github }}" target="_blank">GitHub</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+
+    <!-- Tab: All Projects -->
+    <div class="tab-pane" id="projects-all">
+      {% assign projectsall = site.data.projects.projs %}
+      {% for project in projectsall %}
+        <div class="project">
+          <img src="{{ project.image }}" alt="{{ project.name }} Image" style="width:100px; height:auto;">
+          <p class="title"><b>{{ project.name }}</b></p>
+          <div class="project-buttons">
+            {% if project.github %}
+              <a class="button" href="{{ project.github }}" target="_blank">GitHub</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="resume">
+  <h4>Vitæ</h4>
+
+
+  <!-- The Timeline -->
+  <ul class="timeline">
+    {% for exp in site.data.experience.experiences %}
+    <li>
+      {% if exp.category == "work" %}
+      <div class="direction-l">
+      {% else %}
+      <div class="direction-r">
+      {% endif %}
+        <div class="flag-wrapper">
+          <span class="flag">{{ exp.place }}</span>
+          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        </div>
+        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          
-
-	<div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/model_architecture.png"
-                alt="Project multimodalclinical"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Multimodal Healthcare Classification</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AliRasekh/multimodal-clinical'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://arxiv.org/abs/2405.15442'"
-              >
-                arXiv
-              </button>
-            </div>
-          </div>
-
-
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Robust Visual Classifier</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/reza-heidari-ce/MLC-Vision'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-		  <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">3D Tennis</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Rezaei-Parham/Tennis-3DVision-Project'"
-              >
-                Github
-              </button>              
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Civilization V Game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AdvancedProgrammingSUT2022/project-group-23'"
-              >
-                Github
-            </div>
-          </div>
-		  
-		  
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>r4heidari [at] gmail [dot] com</p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/rhei">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Reza Heidari. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
-</html>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

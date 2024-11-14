@@ -1,0 +1,13 @@
+projs:
+  - name: "A 3D Tennis Complete Analysis"
+    github: "https://github.com/Rezaei-Parham/Tennis-3DVision-Project"
+    year: "2023"
+    image: "assets/tennis.png"
+
+  - name: "Hallucination Detection and Mitigation"
+    github: "https://github.com/reza-heidari-ce/Hallucination-Detection-and-Mitigation"
+    year: "2024"
+    image: "assets/hallu.jpg"
+
+
+  
